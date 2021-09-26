@@ -1,0 +1,20 @@
+h2 {
+    color: #7b84d6;
+}
+.table thead {
+    color: #7b84d6;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #7c85da;
+    color: white;
+ }
+.content {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+hr.rounded {
+    border-top: 3px solid #7b84d6;
+    border-radius: 5px;
+}

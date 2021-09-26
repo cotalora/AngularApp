@@ -1,0 +1,27 @@
+<div class="content">
+  <h2>Usuarios</h2>
+  <hr class="rounded">
+  <form class="d-flex">
+    <input class="form-control me-2" type="search" placeholder="Buscar usuario..." aria-label="Search" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
+    <button class="btn btn-outline-success" (click)="search()" type="button">Buscar</button>
+  </form>
+  <hr class="rounded">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Nombre de usuario</th>
+        <th scope="col">Correo</th>
+        <th scope="col">Dirección</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of users">
+        <th scope="row">{{item.name}}</th>
+        <td>{{item.username}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.address.street}} - {{item.address.city}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
